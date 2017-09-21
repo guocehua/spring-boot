@@ -1,0 +1,7 @@
+umf:
+  profile: ASIA_TEST
+  clientId: 383e1d786cad37cbe4c5fd926aef09b546479f62
+  clientSecret: 58f3f567fe7d973c08417a1edc6dbe238cd71246
+  ossBucket: payingcloud-credential
+  ossKeyFile: umf/test/6260_.key.p8
+  ossCertFile: umf/test/umpay.cert.crt

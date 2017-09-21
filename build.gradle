@@ -1,0 +1,43 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.7.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.exam'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenLocal()
+	maven { url 'http://maven.aliyun.com/nexus/content/groups/public'}
+	mavenCentral()
+}
+
+
+dependencies {
+	//compile "org.springframework.boot:spring-boot-configuration-processor"
+	compile 'cn.payingcloud:umf-java:1.0.2'
+	compile 'com.aliyun.oss:aliyun-sdk-oss:2.8.1'
+	compile 'org.springframework.boot:spring-boot-starter-mail'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.springframework.boot:spring-boot-starter-actuator'
+	compile 'org.apache.commons:commons-lang3:3.5'
+	compile 'commons-codec:commons-codec:1.10'
+	compile 'io.springfox:springfox-swagger2:2.7.0'
+	compile 'io.springfox:springfox-swagger-ui:2.7.0'
+	compile('org.springframework.boot:spring-boot-starter-web')
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+//compileJava.dependsOn(processResources)

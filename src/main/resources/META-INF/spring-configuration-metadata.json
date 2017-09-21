@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "umf",
+      "type": "com.exam.springboot.UmfConfig$UmfProperties",
+      "sourceType": "com.exam.springboot.UmfConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "umf.profile",
+      "type": "cn.payingcloud.umf.UmfProfile",
+      "sourceType": "com.exam.springboot.UmfConfig$UmfProperties",
+      "defaultValue": "ASIA_TEST"
+    },
+    {
+      "name": "umf.clientId",
+      "type": "java.lang.String",
+      "sourceType": "com.exam.springboot.UmfConfig$UmfProperties"
+    },
+    {
+      "name": "umf.clientSecret",
+      "type": "java.lang.String",
+      "sourceType": "com.exam.springboot.UmfConfig$UmfProperties"
+    },
+    {
+      "name": "umf.ossBucket",
+      "type": "java.lang.String",
+      "sourceType": "com.exam.springboot.UmfConfig$UmfProperties"
+    },
+    {
+      "name": "umf.ossKeyFile",
+      "type": "java.lang.String",
+      "sourceType": "com.exam.springboot.UmfConfig$UmfProperties"
+    },
+    {
+      "name": "umf.ossCertFile",
+      "type": "java.lang.String",
+      "sourceType": "com.exam.springboot.UmfConfig$UmfProperties"
+    }
+
+  ],"hints":[{
+     "name":"umf.profile",
+  "values":[{
+    "value":"ASIA_TEST"
+  },{
+    "value":"ASIA_PROD"
+  }
+  ]
+}]
+
+}
